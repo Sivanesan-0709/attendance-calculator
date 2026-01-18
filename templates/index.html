@@ -25,6 +25,13 @@
 </div>
 
 <!-- DASHBOARD -->
+{% if risk == "Invalid Input" %}
+<div class="section">
+    <p style="color:red; font-weight:bold;">
+        ⚠️ Classes attended cannot be more than total classes.
+    </p>
+</div>
+{% endif %}
 {% if attendance is not none %}
 <div class="dashboard">
     <div class="card blue">
